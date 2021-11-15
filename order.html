@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order | Bosnian Buffet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/animation.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script src="scripts/order.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul id="nav-menu">
+        <li><a class="nav-link" href="index.html">home</a></li>
+        <li><a class="nav-link" href="menu.html">menu</a></li>
+        <li><a class="nav-link" href="">order</a></li>
+      </ul>
+    </nav>
+    <h1 class="page-title">order</h1>
+    <main>
+      <form action="">
+        <section>
+          <h2>Delivery info</h2>
+          <label for="fname">First name</label>
+          <input type="text" name="fname" id="fname" placeholder="Phil" required>
+          <label for="lname">Last name</label>
+          <input type="text" name="lname" id="lname" placeholder="Brooks" required>
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" placeholder="1648 W Ontario St" required>
+          <label for="phone">Phone number</label>
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="618-898-2247" required>
+        </section>
+        <section>
+          <h2>Order info</h2>
+          <label for="order-options">Make your order</label>
+          <ul id="order-options">
+            <li>
+              <span>Sataraš</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+            <li>
+              <span>Gulaš</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+            <li>
+              <span>Sarma</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+            <li>
+              <span>Ćevapi</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+            <li>
+              <span>Baklava</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+            <li>
+              <span>Tufahija</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+            <li>
+              <span>Hurmašica</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+            <li>
+              <span>Bosanska Kahva</span>
+              <button class="incrementor">+</button><button class="decrementor">-</button>
+            </li>
+          </ul>
+          <label>Your order</label>
+          <textarea id="order" name="order" placeholder="Nothing ordered yet" readonly required></textarea>
+        </section>
+        <button id="submit-btn">Send order</button>
+      </form>
+    </main>
+</body>
+</html>
