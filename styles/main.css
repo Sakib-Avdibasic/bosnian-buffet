@@ -246,7 +246,7 @@ header #hero #work-hours-card span {
 
 #food-menu #food-left .meal .meal-info,
 #food-menu #food-right .meal .meal-info {
-  min-width: 50%;
+  width: 50%;
   height: 100%;
 }
 

@@ -42,6 +42,7 @@
   #food-menu #food-left .meal .meal-info,
   #food-menu #food-right .meal .meal-info {
     height: 50%;
+    width: 100%;
   }
   #food-menu #logo {
     margin: 3vw 0;
