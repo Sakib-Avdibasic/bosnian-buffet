@@ -2,7 +2,6 @@
 
 const workHoursCard = document.getElementById('work-hours-card');
 const isOpen = document.getElementById('is-open');
-const siteDesc = document.querySelector('meta[name=description]');
 
 const hourCST = (new Date().getUTCHours() + 24 - 6) % 24;
 if (hourCST >= 8 && hourCST < 23) {
