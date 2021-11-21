@@ -5,17 +5,10 @@ const isOpen = document.getElementById('is-open');
 const siteDesc = document.querySelector('meta[name=description]');
 
 const hourCST = (new Date().getUTCHours() + 24 - 6) % 24;
-let currentState;
 if (hourCST >= 8 && hourCST < 23) {
-	currentState = 'open';
+	isOpen.textContent = 'open';
 	workHoursCard.style.backgroundColor = 'darkgreen';
 } else {
-	currentState = 'closed';
+	isOpen.textContent = 'closed';
 	workHoursCard.style.backgroundColor = 'red';
 }
-
-isOpen.textContent = currentState;
-siteDesc.setAttribute(
-	'content',
-	siteDesc.getAttribute('content') + currentState
-);
