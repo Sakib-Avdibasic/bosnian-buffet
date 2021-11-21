@@ -10,5 +10,5 @@ if (hourCST >= 8 && hourCST < 23) {
 	workHoursCard.style.backgroundColor = 'darkgreen';
 } else {
 	isOpen.textContent = 'closed';
-	workHoursCard.style.backgroundColor = 'red';
+	workHoursCard.style.backgroundColor = 'darkred';
 }
